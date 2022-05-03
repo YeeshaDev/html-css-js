@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agba Akin's Form Contest</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <div class="card">
+      <header>
+          <h2> Let's get started</h2>
+          <div class="toggle-container">
+          <div id="toggle"> 
+              <div class="toggle-button"></div> 
+          </div>
+          </div>
+      </header>
+      <hr>
+      <form method="post">
+      <div class="field">
+          <label for="name">Name</label>
+          <span class="fa fa-user"></span>
+          <input type="text" name="name" placeholder="Your name" required/>
+          <br>
+          <br>
+          <label for="name">Email</label>
+          <span class="fa fa-envelope"></span>
+          <input type="text" name="email" placeholder="email@mail.com" required/>
+          <br><br>
+          <label for="name">Password</label>
+          <span class="fa fa-lock"></span>
+          <input type="password" value="" id="myInput" placeholder="not less than 6 characters" required/>
+          <input type="checkbox" id="password-toggle" onclick="mytoggle()">
+          <br><br>
+          <label for="name">Website</label>
+          <span class="fa fa-link"></span>
+          <input type="text" name="url"  placeholder="please input your url" required/>
+          <br><br>
+          <button class="submit">Submit</button>
+      </div>
+  </div>  
+  </div>
+</form>
+  <script>
+      const toggle = document.getElementById('toggle');
+      const body = document.querySelector('body');
+      const card = document.querySelector('.card');
+      const field = document.querySelector('.field')
+
+      toggle.onclick = function(){
+          this.classList.toggle('active');
+          body.classList.toggle('active');
+          card.classList.toggle('active');
+          field.classList.toggle('active');
+      };
+
+      function mytoggle() {
+          let x = document.querySelector("#myInput")
+              if(x.type === "password") {
+                  x.type ="text";
+              } else {
+                  x.type = "password";
+              }
+            }
+
+            const form = document.querySelector("form");
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+            })
+   </script>
+</body>
+</html>
