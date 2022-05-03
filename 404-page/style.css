@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(214, 196, 196);
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.heading {
+    margin-top: -30px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #2b2929;
+}
+
+.error-image {
+    margin-top: 40px;
+}
+
+.error-image img {
+    width: 100%;
+}
+
+.error-text {
+margin-top: 70px;
+}
+
+.error-text h2 {
+    color: #201e1e;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.error-text p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(54, 50, 50);
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 30px;
+    background: rgb(102, 94, 94);
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+    background: #292626;
+}
+
+@media screen and (min-width:320px) and (max-width:800px){
+    .container {
+        padding: 1.5rem 2rem;
+        margin: 2rem;
+}
+
+    .heading {
+        margin-top: -30px;
+        margin-left: -10px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        white-space: nowrap;
+        gap: 1rem;
+    }
+
+    .error-image {
+        margin-top: 0px;
+    }
+
+    .error-text h2 {
+        font-size: 2.3rem;
+    }
+
+    .error-text p {
+        font-size: 1.3rem;
+    }
+}
