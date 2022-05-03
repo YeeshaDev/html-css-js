@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f8;
+}
+
+.container {
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-top:20px; 
+    gap: 450px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    padding: 20px;
+}
+
+.card {
+    margin-top: 10rem;
+    border: 2px dotted #fff;
+    text-align: center;
+    line-height: 1.5;
+    background: rgb(94, 89, 89);
+    overflow: hidden;
+}
+
+.card h2 {
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.card h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+#change {
+    padding: 15px;
+    background: aliceblue;
+    border: 2px ridge none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #3d3333;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+}
+
+#change:hover {
+    background:#555;
+    color: #f1f5f8;
+}
+
+@media screen and (max-width:425px){
+
+
+    body {
+        margin: 1rem 1.5rem;
+        padding: 1rem;
+    }
+    .container {
+        max-width: 430px;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-top:20px; 
+        gap: 150px;
+    }
+
+    
+    .card h2{
+        font-size: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 0.9rem;
+    }
+}
