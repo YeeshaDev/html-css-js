@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Space+Mono:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #0f0c0c;
+}
+
+.container {
+    position: relative;
+    max-width: 960px;
+    width: 350px;
+    height: 120px;
+    background:linear-gradient(135deg,#14ffe9,#ffeb3b,#da1c0f,#ff00e0);
+    box-shadow: -5px 5px 7px #f003b433,
+                3px 5px 10px #464242,
+               -5px -5px 8px #1d2020;
+    color: #f0f8ff;
+    border-radius: 5px;
+    animation: animate 0.5s linear infinite;
+}
+
+@keyframes animate{
+    100% {
+      filter:hue-rotate(360deg);
+    }
+}
+.container .time-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    background: #1f2222;
+    height: 95px;
+    width: 325px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .time-container #time{
+    line-height: 88px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform:uppercase;
+    letter-spacing: 1.3px;
+    background: linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 270px;
+    }
+
+    .container .time-container {
+        width: 250px;
+        padding: 5px;
+    }
+
+    .container .time-container #time{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 250px;
+    }
+
+    .container .time-container {
+        width: 230px;
+    }
+
+    .container .time-container #time{
+        font-size: 2rem;
+    }
+}

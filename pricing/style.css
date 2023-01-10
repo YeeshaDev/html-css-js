@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    font-size: 15px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.heading h1{
+    text-transform: capitalize;
+    margin: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.heading h3 {
+font-weight: 500;
+font-size: 1rem;
+text-align: center;
+color: #646464;
+margin: 0.6rem;
+}
+
+.bills-field .input {
+    color: #646464;
+    font-weight: 600;
+    display: inline-flex;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.bills-field input {
+    margin-top: 3px;
+}
+
+.bills-field p{
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+
+.bills-field span {
+    color: #004df3;
+}
+
+.cards {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1rem;
+padding: 2rem;
+}
+
+.table {
+    border: 1px solid #e5e5e5;
+    padding: 1.5rem;
+    width: 250px;
+    color: #646464;
+
+    
+}
+.table h2{
+    color: #646464;
+    margin: 5px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-size: 2rem;
+    
+}
+
+.table h4{
+    text-align: left;
+}
+
+.table .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info span {
+    font-size: 1.6rem;
+}
+
+.info h2 {
+    font-size: 3rem;
+    color: #000;
+    
+}
+
+.info p {
+    font-size: 0.8rem;
+    color: #646464;
+}
+button {
+    margin: 15px;
+    border: 1px solid #646464;
+    background: transparent;
+    padding: 10px;
+    width: 70%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #646464;
+}
+
+.table .icons  span {
+    text-align: left;
+    display: block;
+    line-height: 2;
+    white-space: nowrap;
+    margin-top: 1rem;
+    color: #646464;
+}
+
+    .table .icons .fa-check {
+      color: #00b341;
+      margin: 5px;
+    }
+
+.table .icons .fa-times-circle-o {
+    color:#ff2725;
+    margin: 5px;
+}
+
+.table-2 {
+    border: 2px solid #004df3;
+}
+
+.table-2 h2 {
+    color: #004df3;
+}
+
+.table-2 button {
+    background-color: #004df3;
+    border: none;
+    color: #d5e3fe;
+}
+
+.table-2 button:hover{
+    background: #d5e3fe;
+    color: #004df3;
+}
+
+@media screen and (min-width:500px) and (max-width:800px){
+ .cards {
+     flex-direction: column;
+ } 
+ .bills-field .input {
+     text-align: center;
+     display: flex;
+     align-items: center;
+     margin-left: 110px;
+ }
+}
+
+ @media screen and (min-width:320px) and (max-width:478px) {
+         .container {
+             padding: 2.5rem;
+         }
+
+         .heading h1{
+             font-size: 1.2rem;
+         }
+
+        .cards {
+            flex-direction: column;
+        } 
+
+
+
+        .bills-field .input {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
+        }
+     }
+
+    

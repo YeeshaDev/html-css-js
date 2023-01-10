@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Kumbh+Sans&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%));
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card {
+background: #fff;
+border-radius:10px;
+padding: 1rem 1.5rem;
+margin: 1.5rem;
+background-image: url(images/bg-pattern-desktop.svg);
+background-repeat: no-repeat;
+background-size: contain;
+height: 400px;
+background-position-x: -20%;
+background-position-y: 70%;
+overflow: hidden;
+outline: none;
+
+}
+
+.wrapper {
+display: grid;
+grid-template-columns: 350px 1fr;
+grid-gap:20px;
+overflow: hidden;
+}
+
+.content {
+    margin: 30px;
+    line-height:1.2;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+header {
+    color: hsl(237, 12%, 20%);
+    font-weight: 900;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.accordion {
+    display: flex;
+    justify-content:space-between;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.accordion h3 {
+    margin: 15px;
+    color:hsl(240, 6%, 50%);
+}
+
+.accordion h3:hover {
+    color: hsl(237, 12%, 20%)
+}
+
+.panel p {
+    color: hsl(240, 6%, 50%);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.panel p:hover {
+    color: rgb(247, 76, 76);
+    
+}
+
+.accordion img {
+    align-self: center;
+}
+
+.images {
+    position: relative;
+}
+
+.image-inner {
+    background-image: url(images/illustration-woman-online-desktop.svg);
+    height: 80%;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x:-30%;
+    background-position-y:70% ;
+    margin-left: -12%;
+    overflow: hidden;
+}
+
+.images img {
+    position: absolute;
+    top: 30%;
+    right: 70%;
+}
+
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid  hsl(240, 5%, 91%);
+
+}
+
+.active img {
+    transform: rotate(180deg);
+}

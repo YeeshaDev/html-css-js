@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="wrapper">
+        <div class="images">
+          <div class="image-inner">
+
+          </div>
+          <img class="box" src="images/illustration-box-desktop.svg">
+        </div>
+<div class="content">
+  <header>
+  <h1>FAG</h1>
+  </header>
+  <div class="accordion">
+    <h3>How many team members can I invite?</h3>  
+  <img class="arrow" src="images/icon-arrow-down.svg">
+  </div>
+  <div class="panel">
+    <p>can invite up to 2 additional users on the Free plan. There is no limit on 
+    team members for the Premium plan.</p>
+  </div>
+  <div class="accordion">
+    <h3>What is the maximum file upload size?</h3>
+  <img class="arrow" src="images/icon-arrow-down.svg">
+  </div>
+  <div class="panel">
+  <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+   </div>
+  <div class="accordion">
+    <h3>How do I reset my password?</h3>
+    <img class="arrow" src="images/icon-arrow-down.svg">
+  </div>
+  <div class="panel">
+    <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+  A reset link will be emailed to you.</p>
+ </div>
+  <div class="accordion">
+    <h3>Can I cancel my subscription?</h3>
+    <img class="arrow" src="images/icon-arrow-down.svg">
+  </div>
+  <div class="panel">
+    <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+  </div>
+  <div class="accordion">
+    <h3>Do you provide additional support?</h3>
+    <img class="arrow" src="images/icon-arrow-down.svg">
+  </div>
+  <div class="panel">
+    <p>an email support is available 24/7. Phone lines are open during normal business hours.</p>
+ </div>
+</div>
+</div>
+  </div>
+  </div>
+  <script>
+
+    //get the value by its classname from html
+
+    var acc=
+    document.getElementsByClassName("accordion");
+var i;
+for(i = 0; i < acc.length; i++) {
+  //add an event i.e open and close
+acc[i].addEventListener("click",function() {
+
+  //to make the toggle active.
+
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    //accordion is closed, set the max-height 0.
+    if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+    }
+
+    // else set  it to the scroll height of the content in acc.
+    else {
+        panel.style.maxHeight=panel.scrollHeight + "px";
+    }
+});
+}
+    </script>
+</body>
+</html>
