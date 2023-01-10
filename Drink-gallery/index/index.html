@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="wrap">
+        <div class="background-change"></div>
+   <div class="heading">
+       <div class="image-logo">
+       <img src="https://o.remove.bg/downloads/a5cca5f2-7753-4620-870b-3620fd54d363/image-removebg-preview.png" alt="coke logo"/>
+       </div>
+       <div class="nav">
+           <div class="ham-menu">
+             <a href="javascript:void(0);" class="open">
+                <i class="fa fa-bars"></i></a> 
+                <a href="javascript:void(0);" class="close">
+                    <i class="fa fa-close"></i></a>
+             </div>
+           <ul>
+               <li class="active"><a href="#"> Home</a></li>
+               <li><a href="#"> Products</a></li>
+               <li><a href="#"> What's New</a></li>
+               <li><a href="#"> Contact</a></li>
+           </ul>
+       </div>
+       </div>
+       <main>
+       <div class="brand-text">
+       <h1 id ="brand">DORITOS</h1>
+       <h3>More than just chips</h3>
+       <p>Our vision as a brand is to craft brands and choice of chips<br> that people love, to
+           refresh them in body and spirit.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur 
+               adipiscing elit. Aenean<br> venenatis. lorem a condimentum vestibulum. 
+       </p>
+       <button>Buy Now</button>
+       </div>
+       <div class="main-image">
+           <img src="images/red.png" alt="red" id="mainImg">
+       </div>
+    
+       </main>
+       <div class="thumbnail">
+           <ul>
+        <li data-text="coke"><img src="images/red.png" style="width:4rem;" onclick="bgColorChange('#cf2222')"></li>
+        <li data-text="fanta"><img src="https://o.remove.bg/downloads/bfcfc3f9-580a-47cd-ac9c-caa2d6a79f5c/image-removebg-preview.png" style="width:5rem;" onclick="bgColorChange('#1a48cf')"></li>
+        <li data-text="sprite"><img src="https://o.remove.bg/downloads/3d445a4f-b41a-4f15-950a-dfe5b819b891/image-removebg-preview.png" style="width:4rem;" onclick="bgColorChange('#e7e734')"></li>
+        <li data-text="sprite"><img src="https://o.remove.bg/downloads/ef480e0a-1a53-4083-a4a8-077acaded332/image-removebg-preview.png" style="width:4rem;" onclick="bgColorChange('#800080')"></li> 
+         </ul>
+        </div>
+        </div>   
+        </div> 
+        <script src="main.js"></script>   
+        </body>
+         </html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5f8;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title h2 {
+text-align: center;
+margin-top: 2rem;
+position: relative;
+}
+
+.underline {
+    content: '';
+    position: absolute;
+    border-bottom: 5px solid #61c2e9;
+    width: 100px;
+    margin-top: 5px;
+    left: 640px;
+}
+
+
+.card {
+    background-color:#fff;
+    box-shadow: 5px 13px 20px rgb(175, 169, 169);
+    padding: 1.5rem;
+    margin: 2rem 1.5rem 1rem 1.5rem;
+    text-align: center;
+}
+
+#image {
+    position: relative;
+}
+
+#image i {
+    position:absolute;
+    color: #fff;
+    background: #61c2e9;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2rem;
+    display: block;
+    z-index: 3;
+    left: 130px;
+    top: 10px;
+}
+
+.back-image {
+    position: absolute;
+    border: 2px solid #61c2e9;
+    border-radius: 50%;
+    background: #61c2e9;
+    width: 9rem;
+    height: 9rem;
+    top: -5px;
+    right: 170px;
+}
+
+.avatar {
+    position: relative;
+    display: block;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+     z-index: 2;
+    overflow: hidden;
+    left: 150px;
+ 
+}
+
+.review h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #4d4a4a;
+}
+
+.review h4{
+    color: #61c2e9;
+    margin-top: 5px;
+}
+
+.review p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.btn-container {
+    padding: 10px;
+}
+
+.prev-btn, .next-btn {
+    margin: 10px;
+     border: none;
+     outline: none;
+     font-size: 1.2rem;
+     transition: 0.3s;
+     color: #4d4a4a;
+}
+
+.next-btn:hover, .prev-btn:hover {
+    background: #61c2e9;
+    color: aliceblue;
+    padding: 10px;
+    }
+
+    #random-btn {
+        padding: 7px;
+        margin: 12px;
+        border:none;
+        outline: none;
+        background-color: #4d4a4a;
+        color:#fff;
+        border-radius: 5px;
+        width: 30%;
+        font-size: 1.1rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+}
+
+#random-btn:hover{
+    transition: 0.3s;
+    background-color:#61c2e9;
+}
+
+@media screen and (max-width:420px){
+
+    .card {
+      padding: 3rem;
+        margin: 2rem 2.5rem;
+    }
+     .underline {
+     left:160px;
+    }
+
+    .back-image {
+        top: -9px;
+    right: 30px;
+    }
+    
+}

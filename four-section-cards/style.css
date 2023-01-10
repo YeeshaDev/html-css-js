@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width:1020px;
+    padding: 20px 15px;
+}
+.content {
+text-align: center;
+}
+.content h2 {
+    font-size: 1.5rem;
+    color:hsl(229, 6%, 66%);
+    font-weight: 400;
+}
+
+.content h3 {
+    font-size:1.5rem;
+    font-weight: 900;
+    color:hsl(234, 12%, 34%);
+}
+.content p {
+    font-size: 0.9rem;
+    color: hsl(229, 6%, 66%);
+    margin-top: 15px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.card{
+  background-color:#fff;
+  box-shadow: 5px 5px 5px hsla(229, 6%, 66%,.2),
+  -5px 5px 5px hsla(229, 6%, 66%,.3);
+  padding: 30px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.card-text {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.card1 {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.card2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.card3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.card4 {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.card-text h3 {
+    color:hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.card-text p {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.7rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card1,.card4 {
+    align-self: center;
+}
+
+@media screen and (max-width:760px){
+    .wrap {
+        grid-template-columns: 1fr;
+    }
+
+    @media  screen and (max-width:425px) {
+        body {
+            font-size: 13px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+        }
+
+        .content h3 {
+            font-size: 20px;
+        }
+        .content p {
+            font-size: 0.7rem;
+        }
+
+        .card {
+            padding: 10px;
+        }
+        .wrap {
+            margin: 1rem 1.2rem;
+        }
+
+        .card-text {
+            padding-bottom: 30px;
+        }
+    }
+    
+
