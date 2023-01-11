@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: #000;
+    padding: 2em;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    padding:3rem;
+    min-height: 100vh;
+    max-width: 460px;
+}
+
+.card {
+background:  hsl(213, 19%, 18%);
+padding: 1.5rem;
+border-radius: 15px;
+left:-10px;
+top: -20px;
+
+}
+
+header .star {
+    background:hsl(213, 17%, 24%);
+    padding: 10px;
+    border-radius: 50%;
+    display: block;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.star img {
+    width: 100%;
+}
+
+.heading {
+    color:hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.heading-sub {
+    font-size: 15px;
+    margin-top: 1.2rem;
+    color:hsl(217, 12%, 63%);
+    font-weight: 400;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rating-btn {
+    background:hsl(213, 14%, 13%);
+    display: block;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(213, 14%, 13%);
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    }
+
+    .rating-btn.active:hover {
+        background-color: hsl(217, 12%, 63%);
+        opacity: 1;
+        color: hsl(0, 0%, 100%);
+        border: none;
+    }
+
+    .rating-btn:hover {
+        background: hsl(25, 97%, 53%);
+        border: 2px solid hsl(25, 97%, 53%);
+        opacity: 1;
+    }
+
+    #submit-btn a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 20px;
+        width: 100%;
+        background: hsl(25, 97%, 53%);
+        color:hsl(0, 0%, 100%);
+        padding: 8px;
+        border-radius: 50px;
+}
+
+#submit-btn a:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.result {
+    background: hsl(213, 19%, 18%);
+    margin-top: 20px;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    }
+
+    .hide {
+        display:none;
+    }
+
+    .image {
+        margin: 10px 5px 20px 5px;
+    }
+
+    .page-2 h4 {
+        background: hsl(214, 21%, 13%);
+        color: hsl(25, 97%, 53%);
+        padding: 5px;
+        border-radius: 20px;
+        border: 2px solid hsl(214, 21%, 13%);
+        width: 70%;
+        white-space: nowrap;
+        margin-left: 50px;
+
+    }
+
+    .page-2 h3 {
+      color: hsl(0, 0%, 100%);
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: 900;
+      }
+
+   .page-2 p {
+       font-size: 15px;
+       color:hsl(217, 12%, 63%);
+       margin-top: 20px;
+   }   
+

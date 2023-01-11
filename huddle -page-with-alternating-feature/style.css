@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(/images/bg-hero-mobile.svg);
+    background-position: bottom 45px right 50px,top 70px left 50px;
+    background-repeat: repeat-x;
+    margin: 50px;
+    padding: 1rem;
+
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav img {
+    width: 7rem;
+}
+
+.nav-btn {
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: -5px -3px 5px rgb(228, 224, 224),
+                 -5px -3px 5px rgba(0,0,0,0.1);
+     transition: 0.5s ease-in-out;
+     color: hsl(192, 100%, 9%);   
+     font-weight: 600;      
+}
+
+.nav-btn:hover {
+    transform: scale(1.2);
+    background-color: #fff;
+    font-size: 0.7rem;
+    color: hsl(208, 11%, 55%);
+}
+
+.heading  h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-top: 3rem;
+    color:  hsl(192, 100%, 9%);
+}
+
+.heading p {
+    font-size: 0.8rem;
+    color: hsl(192, 100%, 9%);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.heading-mockup {
+    margin-top: 1.5rem;
+}
+.heading-mockup img {
+    width: 70%;
+}
+
+.heading-btn {
+    border: none;
+    background-color:hsl(322, 100%, 66%);
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #fff;
+    width: 50%;
+}
+main {
+    padding-bottom: 25%;
+}
+
+figure img {
+    width: 85%;
+}
+
+/*This selects all the class attribute that has class in them.
+i.e the first-class,second-class,third-class all have a common name "class"*/
+
+[class*= class] {
+    box-shadow: -5px 7px 12px #bbb;
+    padding: 1.5em;
+    margin: 1.5em;
+    text-align: center;
+    overflow: hidden;
+}
+
+.second-class {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* This selects all the descendants of h3 in each section. */
+section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: hsl(192, 100%, 9%);
+}
+/* This selects all the descendants of p in each section. */
+section  p {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: hsl(208, 11%, 55%);
+    margin-top: 0.8em;
+}
+
+section {
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    z-index: 2;
+    top: -140px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-top: 3rem;
+    overflow: hidden;
+    box-shadow: -5px -3px 5px rgba(185, 173, 173, 0.1),
+                 -5px 3px 5px rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding: 1rem;
+    height: 190px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.info h2 {
+    font-size: 1.2em;
+    font-family: 'Poppins',sans-serif;
+    margin-top:40px;
+    color: hsl(192, 100%, 9%);
+}
+
+.info-btn {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 20px;
+    color: #fff;
+    font-weight:600;
+}
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.5 ease-in-out;
+    background-color:hsl(322, 89%, 76%);
+}
+
+footer {
+    background-color: #00252e;
+    padding: 20% 0.7rem 1rem 1rem;
+    z-index: 1;
+
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: hsl(193, 100%, 96%);
+}
+
+.footer-logo {
+    margin-top: 2rem;
+    filter: invert(5%) sepia(80%) saturate(20%) hue-rotate(323deg) brightness(106%) contrast(101%);
+    
+}
+
+.footer-logo img {
+    width: 5rem;
+    color: #fff;
+}
+
+.phone,.email,.location {
+    display: flex;
+    gap: 7px;
+    margin-top: 10px;
+
+}
+
+.phone-logo,.email-logo,.location-logo {
+    width:0.9rem;
+    height:0.8rem;
+    margin-top: 5px;
+}
+
+.middle,.right{
+    margin-top: 20px;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials span {
+    color:hsl(193, 100%, 96%);
+    border: 1px solid hsl(193, 100%, 96%);
+    margin: 5px;
+    padding: 7px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+
+}
+
+.socials span:nth-child(1){
+    width: 33px;
+    height: 33px;
+}
+
+.socials span:hover {
+    color: hsl(322, 100%, 66%);
+}
+
+@media screen  and (min-width:850px) and (max-width:1440px){
+    body {
+        max-width: 1200px;
+    }
+
+    header {
+        background-image: url(/images/bg-hero-desktop.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+    .heading {
+        display: flex;
+    white-space: nowrap;
+    margin-left: 70px;
+    }
+
+    .heading-mockup {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+        margin-left: 150px;
+    
+    }
+
+    .heading-mockup img {
+        width: 100%;
+    }
+     .heading h1 {
+    margin-right:70px;
+    font-size: 1.7em;
+}
+
+.heading p {
+    margin-left: -10px;
+    font-size: 0.8em;
+
+}
+    .heading-btn {
+        width: 40%;
+        margin:20px;
+        float: left;
+    }
+
+    main {
+        padding-bottom: 15%;
+    }
+    
+
+    [class*= class] {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4em;
+        color: hsl(192, 100%, 9%);
+        margin-top: 5em;
+    }
+    /* This selects all the descendants of p in each section. */
+    section  p {
+        font-size: 0.8em;
+        font-weight: 500;
+        color: hsl(208, 11%, 55%);
+        margin-top: 1.5em;
+    }
+
+    .info {
+        top: -170px;
+        left: 50%;
+        height: 250px;
+        width: 60%;
+    }
+
+    .info h2 {
+        font-size: 1.6em;
+        margin-top:2.7em;
+    }
+    
+    .info-btn {
+        padding: 12px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 13%;
+        gap: 20px;
+    }
+   .footer-logo {
+        margin-top: 1rem;
+    }
+    
+    .footer-logo img {
+        width: 7rem;
+    }
+    
+    .middle,.right{
+        margin-top: 50px;
+        line-height: 2;
+    }
+    
+    .socials {
+        text-align: center;
+        margin-top: 35px;
+    }
+    
+    .details {
+        margin-top: 100px;
+    }
+}
