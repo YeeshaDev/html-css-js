@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 97vh;
+}
+
+.container {
+    margin-top: 15px;
+    max-width: 100%;
+    width: 1200px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.profile {
+    text-align: center;
+    margin: auto;
+}
+
+.profile-image img {
+    width: 5rem;
+    border-radius: 10px;
+}
+
+.profile-text h1{
+    font-size: 1.2rem;
+    margin: 10px 10px 3px 10px;
+}
+
+.profile-text h4 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+.profile-stat {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+    width: 100px;
+    margin: 15px  auto 5px auto;
+    justify-content: center;
+
+}
+.box{
+    background-color: #ebe6e6;
+    border-radius: 15px;
+    text-align: center;
+    width: 90px;
+    padding: 10px;
+    line-height: 1.2;
+    
+}
+
+.box h2 {
+    font-size: 1rem;
+}
+
+.box p {
+    font-size: 0.8rem;
+    color: #928c8c;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 0.8fr);
+    justify-content: center;
+    gap: 1rem;
+    object-fit: cover;
+    padding: 2rem 3rem;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+
+.card1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+
+
+.card2 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start:1;
+    grid-row-end: 3;
+}
+
+.card3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end: 6;
+}
+
+.card4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start:3;
+    grid-row-end: 9;
+}
+
+.card5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:6;
+    grid-row-end: 9;
+}
+
+.card6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start:6;
+    grid-row-end: 9;
+}
