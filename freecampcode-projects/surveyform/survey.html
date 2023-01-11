@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css"></link>
+    <title> Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">FreeCampCode Survey Form</h1>
+    <p id="description">This is a survey form for certification</p>
+
+  </header>  
+  <section>
+    <form id="survey-form">
+        <div class="fields">
+        <label for="name" id="name-label">Name</label>
+     <input type='text' id="name"
+      placeholder="Enter your name" required/>
+      <label for="email" id="name-label">Email</label>
+     <input type='email' id="email"
+      placeholder="Enter your email" required/>
+      <label for="age" id="number-label">Age</label>
+      <input type='number' id="number"
+      min="10" max="50"
+      placeholder="Enter your age" required/>
+    </div>
+    <div class="select">
+    <p>What describes you best?</p>
+      <select id="dropdown">
+    <option value="pick">pick one</option>
+        <option value="student">A student</option>
+        <option value="working-class">A working-class</option>
+        <option value="self-employed">Self-employed</option>
+
+      </select>
+    </div>
+      <div class="radio">
+      <label for="sex" id="sex">What is your gender?</label>
+        <label for="male">
+      <input type="radio" name="gender" value="male"/>
+      Male</label>
+      <label for="female">
+      <input type="radio" name="gender" value="female"/>
+      Female</label>
+    </div>
+    <div class="checkbox">
+      <label>Pick a language that intrests you</label>
+      <label>
+      <input type="checkbox" value="javascript"/>
+      JavaScript</label>
+      <label>
+      <input type="checkbox" value="java"/>
+      Java</label>
+      <label>
+      <input type="checkbox" value="flutter"/>
+      Flutter</label>
+    </div>
+    
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea name="comment" placeholder="Enter additional information here...">
+      </textarea>
+    
+      <button id="submit">submit</button>
+    </form>
+  </section>
+</body>
+</html>

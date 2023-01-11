@@ -1,0 +1,108 @@
+.quote-container {
+    background-color: #8411f0;
+    box-shadow: 0 8px 10px rgb(15, 14, 14,0.2);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    margin:3rem auto;
+    max-width: 500px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.quote-area {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.quote-area i {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.quote {
+    font-size: 1.3rem;
+}
+
+.author {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap:10px;
+font-style: italic;
+}
+
+.quote-area i:first-child {
+    margin: -40px 5px 0 0;
+}
+
+.quote-area i:last-child{
+margin: 0 0 -30px 5px;
+}
+
+.btns .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btns ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btns ul li {
+    list-style: none;
+    border: 2px solid #fff;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+ .quoteBtn {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 30px;
+    color: #8411f0;
+ } 
+
+ /* Accordion starts here*/
+.wrapper {
+    box-shadow: 0 5px 8px rgb(15, 14, 14,0.2),
+               -5px  10px 10px rgb(0, 0, 0,0.5);
+padding: 1.5rem 2rem;
+max-width: 600px;
+margin: 2rem auto;
+}
+
+.accordion {
+    border: none;
+    outline: none;
+    background: grey;
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    height: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size:1rem;
+    margin: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.active,.accordion:hover {
+    background: rgb(70, 67, 67);
+}
+
+.panel {
+    padding: 1.5rem;
+    overflow: hidden;
+    display: none;
+}

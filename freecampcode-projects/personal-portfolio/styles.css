@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter:wght@100;200;300;400;500;600&family=La+Belle+Aurore&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sora:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height:100vh;
+    background-color: #222;
+    color: #fff;
+    
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(26, 151, 88);
+    
+    
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+    text-decoration: none;
+    color: #fff;
+    
+}
+#welcome-section {
+    background-color: rgb(11, 152, 114);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#welcome-section  h1 {
+    font-size: 3.5rem;
+}
+#welcome-section p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+}
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+.project-tile {
+    max-width: 100%;
+    padding: 3rem;
+    margin: auto;
+    
+}
+.project-tile a {
+    text-decoration: none;
+    color: #222;
+}
+#projects img {
+    width: 25rem;
+    margin-top: 1rem;
+}
+.project-title {
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -0.5rem;
+    
+}
+
+#contact {
+    height: 200px;
+    background-color: #fff;
+    color: #222;
+    text-align: center;
+    padding: 1rem;
+}
+#contact h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+#contact a {
+    display: block;
+    width: 150px;
+    margin:2rem auto;
+    text-decoration: none;
+    background-color:rgb(26, 151, 88);
+    padding: 1rem;
+    color: #fff;
+    animation: animate 1s linear infinite;
+    
+}
+@keyframes animate {
+    0% {
+        transform: scale(0.95);
+        transition: 1s linear ease;
+    }
+    
+    100% {
+        transform: scale(1.1);
+        transition: 1s linear ease;
+    
+    }
+}
+@media screen and (max-width:960px){
+   #projects {
+     margin: auto;
+    grid-template-columns: 1fr;
+   } 
+}

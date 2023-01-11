@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter:wght@100;200;300;400;500;600&family=La+Belle+Aurore&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sora:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height:100vh;
+    color: #222;
+    
+}
+
+#header-img {
+    width: 20rem;
+    object-fit: contain;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+#nav-bar ul {
+    display: flex;
+}
+#nav-bar ul li {
+    display: flex;
+    list-style: none;
+}
+#nav-bar  ul li a {
+font-size: 0.9rem;
+display: flex;
+margin: 1rem;
+text-decoration: none;
+color: #222;
+}
+
+.form-details {
+    text-align: center;
+}
+
+.form-details h2 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.form-details #form input{
+    display: block;
+    margin: 2rem auto 0 auto;
+    height: 45px;
+    text-align: center;
+}
+
+.form-details #form #email {
+    width: 30%;
+}
+.form-details #form #submit {
+    width: 20%;
+    background-color: rgb(11, 115, 19);
+    color: aliceblue;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+}
+#Features {
+    margin-top: 4rem;
+}
+#details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+#details i {
+    color: rgb(11, 115, 19);
+}
+#details p {
+    margin-top: 1rem;
+}
+
+#video {
+    display: block;
+    width: 60%;
+    margin:3rem auto;
+}
+#Pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.pricing-info {
+    width: 18rem;
+    height: 20rem;
+    padding: 1rem;
+    border: 1px solid rgb(11, 115, 19);
+    margin: 1rem;
+    text-align: center;
+    
+}
+
+.pricing-info p {
+    margin: 2rem 1rem;
+}
+
+#pricing-btn {
+   border: none; 
+   background-color: rgb(11, 115, 19);
+   color: #fff;
+   width: 5rem;
+   padding: 1rem;
+   font-family: inherit;
+}
+
+@media screen and (max-width:960px){
+    #Pricing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+

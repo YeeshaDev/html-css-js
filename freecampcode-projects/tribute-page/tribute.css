@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter:wght@100;200;300;400;500;600&family=La+Belle+Aurore&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500;600&family=Roboto:wght@300;400;500&family=Sora:wght@200;300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height:100vh;
+    color: #222;
+    
+}
+
+
+#main {
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+#title {
+    margin: 1rem 1rem 0.6rem 1rem;
+}
+
+#subtitle {
+    margin: 0.6rem;
+}
+#image {
+    max-width: 95%;
+    height: 100%;
+}
+
+#tribute #tribute-info {
+    margin:1.5rem;
+    font-size:1.8rem;
+}
+#tribute p{
+    margin: 1rem;
+}
+#tribute-link {
+    color: rgb(16, 100, 219);
+}

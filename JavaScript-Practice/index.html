@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+   <div id="demo">
+       <p>I am learning JavaScript</p>
+   </div>
+   <br> 
+   <button onclick=" this.innerHTML = Date()">The time is</button>
+   <br><br>
+   <div class="guessGame">
+<p class="guesses"></p>
+<p class="finalResult"></p>
+<p class="result"></p>
+   </div>
+   <label for="guessField">Enter a Number:</label>
+   <input type="text" id="guessField" class="guessField" placeholder="Enter a guess"/>
+   <br><br>
+   <input type="submit" class="guessSubmit" value="Submit Guess"/>
+<!-- conter stats here -->
+   <div class="counter-container">
+    <h2 class="start">0</h2>
+    <button class="add">+</button>
+    <button class="reset">reset</button>
+    <button class="minus">-</button>
+   </div>
+   <!--Another guessing game starts here-->
+<div class="guess-wrapper">
+    <p id="num-guess"></p>
+    <p id="main-result"></p>
+    <p id = "guess-result"></p>
+   <div class="field">
+    <label for="guess-field">Enter a guess:</label>
+    <input type="text" id="guess-input" placeholder="enter guess"/>
+    <button id="submit-btn">Submit guess</button>
+   </div>
+   </div>
+   <!--Random quotes starts here-->
+   <div class="quote-container">
+    <h1>Quote of the day</h1>
+    <div class="content">
+    <div class="quote-area">
+        <i class="fa fa-quote-left"></i>
+        <p class="quote">When we have respect for ourselves and others,
+             we gravitate towards connections that 
+             encourage that.</p>
+        <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author">
+            <span>--</span>
+        <p class="name">Simeon Lindstorm</p>
+        </div>
+        <div class="btns">
+            <div class="features">
+                <ul>
+        <li class="sound"><i class=" fa fa-volume-up"></i></li>
+        <li class="copy"><i class=" fa fa-clone"></i></li>
+        <li class="twitter"><i class=" fa fa-twitter"></i></li>
+        </ul>
+        <button class="quoteBtn">New Quote</button>
+        </div>
+        </div>
+    </div>
+   </div>
+   <!--Accordion starts here-->
+   <div class="wrapper">
+    <button class="accordion">
+        Section 1
+    </button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, est non tristique blandit, urna lacus facilisis mauris, eget finibus erat nisi in tellus. Ut vel neque quis dui malesuada luctus. 
+            Vivamus ut dui in massa ornare sollicitudin 
+            ut eu orci. Ut libero lectus, tincidunt vulputate elit eget, rhoncus laoreet mi.</p>
+    </div>
+    <button class="accordion">
+        Section 2
+    </button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, est non tristique blandit, urna lacus facilisis mauris, eget finibus erat nisi in tellus. Ut vel neque quis dui malesuada luctus. 
+            Vivamus ut dui in massa ornare sollicitudin 
+            ut eu orci. Ut libero lectus, tincidunt vulputate elit eget, rhoncus laoreet mi.</p>
+    </div>
+    <button class="accordion">
+        Section 3
+    </button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, est non tristique blandit, urna lacus facilisis mauris, eget finibus erat nisi in tellus. Ut vel neque quis dui malesuada luctus. 
+            Vivamus ut dui in massa ornare sollicitudin 
+            ut eu orci. Ut libero lectus, tincidunt vulputate elit eget, rhoncus laoreet mi.</p>
+    </div>
+    <button class="accordion">
+        Section 4
+    </button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur, est non tristique blandit, urna lacus facilisis mauris, eget finibus erat nisi in tellus. Ut vel neque quis dui malesuada luctus. 
+            Vivamus ut dui in massa ornare sollicitudin 
+            ut eu orci. Ut libero lectus, tincidunt vulputate elit eget, rhoncus laoreet mi.</p>
+    </div>
+   </div>
+   <script src="main.js"></script> 
+</body>
+</html>
