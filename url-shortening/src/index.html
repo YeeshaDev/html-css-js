@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="/dist/output.css" rel="stylesheet">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<header class="p-3">
+
+     <!--Desktop Navigation-->
+
+  <nav class="hidden relative lg:flex items-center justify-between">
+    <figure>
+      <img src="/images/logo.svg" alt="logo"
+      class="w-full"
+      />
+    </figure>
+    <div class="flex flex-row items-center justify-between gap-10">
+    <ul  class=" flex flex-row items-center justify-between gap-6">
+      <li>
+        Features
+      </li>
+      <li>Pricing</li>
+      <li>Resources</li>
+      <hr/>
+    </ul>
+    
+    <div class=" flex flex-row items-center gap-3">
+      <button class="bg-transparent text-white lg:text-inherit hover:bg-transparent">Login</button>
+      <button class="bg-[var(--btn-clr)] text-white rounded-[1rem] py-2 px-3 w-[200px] lg:w-[100px]">Sign Up</button>
+    </div>
+  </div>
+  </nav>
+  <!--Desktop Navigation Ends -->
+
+         <!--Mobile Navigation-->
+
+  <nav class="relative flex items-center justify-between lg:hidden">
+    <figure>
+      <img src="/images/logo.svg" alt="logo"
+      class="w-full"
+      />
+    </figure>
+    <div class="hamburger block lg:hidden">
+     <p class="text-[4rem] cursor-pointer">=</p>
+    </div>
+    <div id="main_nav" class="flex flex-col lg:flex-row items-center justify-between lg:gap-10">
+    <ul  class=" flex flex-col lg:flex-row items-center justify-between gap-6">
+      <li>
+        Features
+      </li>
+      <li>Pricing</li>
+      <li>Resources</li>
+      <hr/>
+    </ul>
+    
+    <div class="reg-btns flex lg:flex-row items-center gap-3">
+      <button class="bg-transparent text-white lg:text-inherit hover:bg-transparent">Login</button>
+      <button class="bg-[var(--btn-clr)] text-white rounded-[1rem] py-2 px-3 w-[200px] lg:w-[100px]">Sign Up</button>
+    </div>
+  </div>
+  </nav>
+ <!--Mobile Navigation Ends -->
+
+</header>
+<main class="p-3">
+  <section class="flex flex-col-reverse lg:flex-row items-center justify-between p-3">
+    <article class="flex flex-col-reverse lg:block items-center justify-center ">
+      <h1 class="block text-[2rem] lg:text-[4rem]  m-auto lg:m-0">More than just<br/> shorter links</h1>
+      <p class=" lg:w-[70%]"> Build your brand’s recognition and get detailed insights 
+        on how your links are performing.</p>
+        <button class="flex  my-6 rounded-[1rem] py-2 px-5  text-white lg:text-start mx-1">Get Started</button>
+    </article>
+    <figure>
+      <img src="/images/illustration-working.svg" 
+      alt="illustration"/>
+    </figure>
+  </section>
+<div class="relative mt-[3rem]">
+  <section 
+  class="absolute top-[-5rem] left-[50%] translate-x-[-50%] 
+  translate-y-[-50%] z-[99] mt-[5rem] flex flex-col items-center justify-center bg-cover 
+  bg-no-repeat bg-center h-[150px] w-[95%] lg:w-[70%] my-6 mx-auto"
+  style="background-image: url(/images/bg-shorten-desktop.svg); background-color:hsl(260, 8%, 14%)">
+    <form id="form"
+    class="relative flex flex-col lg:flex-row m-[10px] w-full px-2 gap-0">
+<div  class=" flex flex-col lg:flex-row items-center justify-center m-[10px] w-full px-2 gap-0">
+  
+      <input type="text" placeholder="Shorten a link here..."
+      class="input  p-2 w-[70%] rounded-[0.3rem] my-3 "/>
+      
+      <span id="error" class=" absolute bottom-[4rem] lg:bottom-0 left-[110px] lg:left-[70px] inline-block text-[var(--error)] "></span>
+      <button type="submit" class="p-2 text-white  lg:w-[20%] bg-[var(--btn-clr)] w-[70%] rounded-[0.3rem] my-3 ">Shorten It!</button>
+    </div>
+    
+    </form>
+    
+  </section>
+
+  <section class="mt-[6rem] bg-[var(--gray)] h-auto w-full bg-cover py-16">
+    <div class="result w-[90%] lg:w-[70%] m-auto rounded-md bg-white"></div>
+    <div class="text-center ">
+    <h1 class="mt-5 text-[2rem] lg:text-[2.5rem]">Advanced Statistics</h1>
+    <p class="w-[90%] mx-auto my-4">Track how your links are performing across the web with our 
+      advanced statistics dashboard.</p>
+    </div>
+      <article class="relative grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-3 place-items-center lg:max-w-[85%] lg:mx-auto mt-12 lg:mt-2">
+        <div class="absolute w-full lg:w-[85%] h-[20px] bg-[var(--btn-clr)] rotate-90 lg:rotate-0 "></div>
+        <div class="cards">
+          <figure class="absolute top-[-1rem] lg:left-5 bg-[var(--card-img)]
+          w-[50px] h-[50px] rounded-full flex items-center justify-center">
+            <img src="/images/icon-brand-recognition.svg" 
+            class="w-[60%]"
+            alt="brand"/>
+          </figure>       
+<h2> Brand Recognition</h2>
+<p class="w-[90%] mx-auto">Boost your brand recognition with each click. Generic links don’t 
+  mean a thing. Branded links help instil confidence in your content.</p>
+
+        </div>
+        <div class="cards lg:mt-12">
+          <figure class="absolute top-[-1rem] lg:selection:left-5 bg-[var(--card-img)]
+           w-[50px] h-[50px] rounded-full flex items-center justify-center">
+            <img src="/images/icon-detailed-records.svg" 
+            class="w-[60%]"
+            alt="detailed"/>
+          </figure>
+<h2> Detailed Records</h2>
+<p  class="w-[90%] mx-auto">Gain insights into who is clicking your links. Knowing when and where 
+  people engage with your content helps inform better decisions.
+</p>
+</div>
+        <div class="cards lg:mt-[7rem]">
+          <figure class="absolute top-[-1rem] lg:left-5 bg-[var(--card-img)] 
+          w-[50px] h-[50px] rounded-full flex items-center justify-center">
+            <img src="/images/icon-fully-customizable.svg" 
+            class="w-[60%]"
+            alt="fully"/>
+          </figure>
+<h2> Fully Customizable</h2>
+<p  class="w-[80%] mx-auto">Improve brand awareness and content discoverability through customizable 
+  links, supercharging audience engagement.</p>
+        </div>
+      </article>
+  </section>
+</div>
+
+  <footer class="mt-[-1.5rem]">
+    <section 
+    class="bg-cover bg-no-repeat bg-center h-auto w-full my-6 
+    flex flex-col py-5 items-center justify-center text-white"
+  style="background-image: url(/images/bg-boost-desktop.svg); background-color:hsl(260, 8%, 14%)"
+    >
+      <h1 class="text-white text-[2rem] my-5">Boost your links</h1>
+      <button class="rounded-[1rem] py-2 px-5">Get Started</button>
+    </section>
+    <section class="bg-[var(--dark-purple)] text-white flex flex-col lg:flex-row items-center justify-between p-5 mt-[-1.5rem]">
+      <figure>
+        <img src="/images/footer-logo.svg" alt="logo"/>
+      </figure>
+
+      <article class="flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
+        <div class="mt-5 lg:mt-0 ">
+     <h3 class="hover:text-[var(--btn-clr)] cursor-pointer">Features</h3>
+     <ul class="footer__links">
+  <li>Link Shortening</li>
+  <li>Branded Links</li>
+  <li>Analytics</li>
+     </ul>
+    </div>
+    <div>
+      <h3 class="hover:text-[var(--btn-clr)] cursor-pointer">Resources</h3>
+     <ul class="footer__links">
+  <li>Blog</li>
+  <li>Developers</li>
+  <li>Support</li>
+     </ul>
+    </div>
+    <div>
+      <h3 class="hover:text-[var(--btn-clr)] cursor-pointer">Company</h3>
+      <ul class="footer__links">
+   <li>About</li>
+   <li>Careers</li>
+   <li>Contact</li>
+      </ul>
+    </div>
+    <div class="socials flex items-center justify-between gap-5">
+      <img src="/images/icon-facebook.svg" alt="twitter"/>
+      <img src="/images/icon-twitter.svg" alt="twitter"/>
+      <img src="/images/icon-pinterest.svg" alt="twitter"/>
+      <img src="/images/icon-instagram.svg" alt="twitter"/>
+    </div>
+      </article>
+    </section>
+  </footer>
+</main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

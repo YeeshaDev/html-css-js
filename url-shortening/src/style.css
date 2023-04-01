@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --btn-clr:hsl(180, 66%, 49%);
+    --purple:hsl(257, 27%, 26%);
+    --small-text:hsl(257, 7%, 63%);
+    --gray:#eff1f7;
+    --card-img:hsl(255, 11%, 22%);
+    --dark-purple:hsl(260, 8%, 14%);
+    --error:hsl(0, 87%, 67%);
+    --btn-hover:hsl(180, 72%, 76%);
+}
+
+@layer base {
+    p,li{
+        @apply text-[var(--small-text)]
+    }
+    h1,h2 {
+        @apply text-[var(--purple)] font-bold
+    }
+h5{
+    @apply text-[var(--error)]
+}
+    button{
+        @apply bg-[var(--btn-clr)] p-4
+    }
+
+    button:hover {
+        @apply bg-[var(--btn-hover)]
+    }
+   
+}
+
+@layer components {
+    .cards{
+        @apply relative bg-white  py-8 w-[90%]
+         lg:w-[350px] rounded-lg h-[250px] flex flex-col 
+         items-center justify-center 
+    }
+
+    .cards h2 {
+        @apply text-[1.5rem] mb-3
+    }
+
+    .footer__links {
+        @apply mt-4 
+    }
+
+    .footer__links li {
+        @apply text-[var(--gray)] 
+        block cursor-pointer
+    }
+    .footer__links li:hover {
+    @apply text-[var(--btn-clr)] 
+    }
+     .input.error {
+        @apply border-[2px] border-solid border-[var(--error)]
+        }
+
+    .socials img {
+        @apply inline-block w-[1rem] h-[1rem]
+    }
+
+
+    .result .url__item{
+        @apply font-bold flex 
+        flex-col lg:flex-row items-center justify-center 
+        lg:justify-between p-3
+    }
+.result .shorten__flex{
+    @apply flex items-center gap-5 leading-10 lg:leading-normal
+}
+    .result .old__url {
+        @apply text-[0.8rem]
+    }
+    .result .shorten__url {
+        @apply text-[0.8rem] text-[var(--btn-clr)]
+    }
+    .result .shorten__flex .copy__btn {
+        @apply block cursor-pointer h-auto p-2 text-white w-[130px]
+    }
+    .result button {
+       @apply  hidden
+    }
+    .result .copy__btn.active {
+        @apply bg-[var(--purple)]
+    }
+.show_nav{
+    @apply flex flex-col 
+}
+   
+    
+}
+
+@media screen and (max-width:960px) {
+  
+  #main_nav{ 
+    position:absolute;
+    background-color: var(--purple);
+    width: 300px;
+    padding: 1rem;
+    height: auto;
+    top: 5rem;
+    right: 0;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    
+
+     
+  } 
+
+  #main_nav ul li{
+    color: #fff;
+    font-weight: 700;
+}
+#main_nav ul hr{
+    width: 200px;
+}
+  #main_nav .reg-btns {
+    flex-direction: column;
+    
+  }
+}
+
