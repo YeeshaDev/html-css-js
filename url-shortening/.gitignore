@@ -4,7 +4,7 @@
 ###############################################
 *.sketch
 node_modules
-dist
+design
 
 
 # Avoid accidental XD or Figma upload if you convert the design file
